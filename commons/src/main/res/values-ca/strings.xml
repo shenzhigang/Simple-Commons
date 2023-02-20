@@ -2,6 +2,7 @@
 <resources>
     <string name="ok">D\'acord</string>
     <string name="cancel">Cancel·la</string>
+    <string name="back">Enrere</string>
     <string name="nothing">Res</string>
     <string name="later">Més tard</string>
     <string name="save_as">Desa com a</string>
@@ -47,6 +48,7 @@
     <string name="no_phone_call_permission">L\'aplicació no té permís per iniciar trucades telefòniques, concediu-lo a la configuració del dispositiu</string>
     <string name="insert_text_here">Introdueix el text aquí</string>
     <string name="call_person">Truca a %s</string>
+    <string name="confirm_calling_person">Confirmeu la trucada a %s</string>
     <string name="zero">Zero</string>
     <string name="one">U</string>
     <string name="two">Dos</string>
@@ -65,6 +67,11 @@
     <string name="disclaimer">Exempció de responsabilitat</string>
     <string name="take_photo">Fes una foto</string>
     <string name="choose_photo">Tria una foto</string>
+    <string name="choose_video">Tria un vídeo</string>
+    <string name="choose_contact">Tria un contacte</string>
+    <string name="choose_file">Tria un fitxer</string>
+    <string name="record_audio">Grava àudio</string>
+    <string name="record_video">Grava vídeo</string>
     <!-- Events -->
     <string name="birthday">Data de naixement</string>
     <string name="anniversary">Aniversari</string>
@@ -91,6 +98,10 @@
     <string name="landscape_column_count">Nombre de columnes horitzontals</string>
     <string name="change_cover_image">Canvia la imatge de la portada</string>
     <string name="select_photo">Selecciona una foto</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d columna</item>
+        <item quantity="other">%d columnes</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Gestió dels números bloquejats</string>
     <string name="not_blocking_anyone">No esteu bloquejant a ningú.</string>
@@ -105,7 +116,8 @@
     <string name="block_confirmation">Segur que voleu bloquejar «%s»\?</string>
     <string name="block_unknown_calls">Bloqueja les trucades de contactes no emmagatzemats</string>
     <string name="block_unknown_messages">Bloqueja els missatges dels contactes no emmagatzemats</string>
-    <string name="add_blocked_number_helper_text">Enter a number or a pattern (e.g. *12345*, +1*8888) to block all calls and messages from numbers matching the pattern.</string>
+    <string name="add_blocked_number_helper_text">Introduïu un número o un patró (per exemple, *12345*, +1*8888) per bloquejar totes les trucades i missatges dels números que coincideixin amb el patró.</string>
+    <string name="must_make_default_caller_id_app">No es poden bloquejar números desconeguts sense el permís d\'identificació de trucades.</string>
     <!-- Favorites -->
     <string name="favorites">Preferits</string>
     <string name="add_favorites">Afegeix preferits</string>
@@ -113,7 +125,25 @@
     <string name="remove_from_favorites">Elimina dels preferits</string>
     <!-- Search -->
     <string name="search">Cerca</string>
+    <string name="search_in_placeholder">Cerca a %s</string>
     <string name="type_2_characters">Escriviu com a mínim 2 caràcters per iniciar la cerca.</string>
+    <string name="search_contacts">Cerca contactes</string>
+    <string name="search_favorites">Cerca als preferits</string>
+    <string name="search_apps">Cerca aplicacions</string>
+    <string name="search_events">Cerca esdeveniments</string>
+    <string name="search_groups">Cerca grups</string>
+    <string name="search_history">Historial de cerques</string>
+    <string name="search_calls">Cerca trucades</string>
+    <string name="search_files">Cerca fitxers</string>
+    <string name="search_folders">Cerca carpetes</string>
+    <string name="search_files_and_folders">Cerca fitxers i carpetes</string>
+    <string name="search_playlists">Cerca llistes de reproducció</string>
+    <string name="search_artists">Cerca artistes</string>
+    <string name="search_albums">Cerca àlbums</string>
+    <string name="search_tracks">Cerca pistes</string>
+    <string name="search_text">Cerca text</string>
+    <string name="search_conversations">Cerca converses</string>
+    <string name="search_recordings">Cerca enregistraments</string>
     <!-- Filters -->
     <string name="filter">Filtre</string>
     <string name="filter_pro">Filtre (Pro)</string>
@@ -125,6 +155,7 @@
     <string name="no_camera_permissions">Es requereix permís d\'accés a la càmera</string>
     <string name="no_audio_permissions">Es requereix permís d\'accés a l\'àudio</string>
     <string name="no_post_notifications_permissions">Cal permís per publicar notificacions</string>
+    <string name="no_permission">Sense permís</string>
     <!-- Renaming -->
     <string name="rename_file">Canvia el nom del fitxer</string>
     <string name="rename_folder">Canvia el nom de la carpeta</string>
@@ -292,6 +323,7 @@
     <string name="discard">Descarta</string>
     <string name="undo_changes">Desfés els canvis</string>
     <string name="undo_changes_confirmation">Segur que voleu desfer els canvis\?</string>
+    <string name="cannot_be_undone">Aquesta acció no es pot desfer.</string>
     <string name="save_before_closing">Hi ha canvis no desats. Els voleu desar abans de sortir\?</string>
     <string name="apply_to_all_apps">Aplica els colors a totes les aplicacions Simple</string>
     <string name="app_icon_color_warning">ADVERTÈNCIA: Alguns llançadors no gestionen correctament la personalització de la icona d\'aplicació. En cas que la icona desaparegui, proveu de llançar l\'aplicació mitjançant Google Play o algun giny, si està disponible. Un cop llançat, configureu la icona de color taronja predeterminat #F57C00. És possible que calgui tornar a instal·lar l\'aplicació en el pitjor dels casos.</string>
@@ -319,6 +351,7 @@
     <string name="rename">Canvia el nom</string>
     <string name="share">Comparteix</string>
     <string name="share_via">Comparteix a través</string>
+    <string name="resize">Redimensiona</string>
     <string name="select_all">Selecciona-ho tot</string>
     <string name="select_text">Selecciona el text</string>
     <string name="hide">Oculta</string>
@@ -333,6 +366,7 @@
     <string name="redo">Refés</string>
     <string name="print">Imprimeix</string>
     <string name="print_pro">Imprimeix (Pro)</string>
+    <string name="shortcut">Drecera</string>
     <string name="create_shortcut">Crea una drecera</string>
     <string name="create_shortcut_pro">Crea una drecera (Pro)</string>
     <string name="add_number_to_contact">Afegeix un número al contacte</string>
@@ -349,6 +383,7 @@
     <string name="call">Truca</string>
     <string name="contact_details">Detalls del contacte</string>
     <string name="add_contact">Afegeix un contacte</string>
+    <string name="wallpapers">Fons de pantalla</string>
     <!-- Sorting -->
     <string name="sort_by">Ordena per</string>
     <string name="name">Nom</string>
@@ -374,6 +409,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">Segur que voleu continuar amb la supressió\?</string>
     <string name="deletion_confirmation">Segur que voleu suprimir %s\?</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">Segur que voleu moure %s a la paperera\?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -427,6 +463,7 @@
     <string name="seconds_letter">s</string>
     <string name="minutes_letter">m</string>
     <string name="hours_letter">h</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="one">%d segon</item>
         <item quantity="other">%d segons</item>
@@ -566,11 +603,13 @@
     <string name="purchase_simple_thank_you">Compra Simple Thank You</string>
     <string name="general_settings">General</string>
     <string name="color_customization">Personalització del color</string>
+    <string name="improved_color_customization">Personalització del color millorada</string>
     <string name="customize_colors">Personalitza els colors</string>
     <string name="customize_colors_locked">Personalitza els colors (bloquejat)</string>
     <string name="feature_locked">Bloquejat</string>
     <string name="customize_widget_colors">Personalitza els colors dels ginys</string>
     <string name="customize_notifications">Personalitza les notificacions</string>
+    <string name="notification_sound">Notification sound</string>
     <string name="use_english_language">Utilitza l\'idioma anglès</string>
     <string name="language">Idioma</string>
     <string name="show_hidden_items">Mostra els elements ocults</string>
@@ -619,6 +658,16 @@
     <string name="main_screen">Pantalla principal</string>
     <string name="thumbnails">Miniatures</string>
     <string name="list_view">Vista de llista</string>
+    <!-- Excluding -->
+    <string name="exclude">Exclou</string>
+    <string name="exclude_folder">Exclou la carpeta</string>
+    <string name="excluded_folders">Carpetes excloses</string>
+    <string name="excluded">(exclòs)</string>
+    <string name="manage_excluded_folders">Gestiona les carpetes excloses</string>
+    <string name="remove_all">Elimina-ho tot</string>
+    <string name="remove_all_description">Elimino totes les carpetes de la llista d\'excloses\? Això no eliminarà les carpetes.</string>
+    <string name="temporarily_show_excluded">Mostra temporalment les excloses</string>
+    <string name="stop_showing_excluded">Deixa de mostrar les excloses</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Gestiona les pestanyes mostrades</string>
     <string name="default_tab_to_open">Pestanya a obrir en iniciar l\'aplicació</string>
@@ -640,9 +689,10 @@
     <string name="moving_recycle_bin_items_disabled">Moure els elements de la paperera està de reciclatge desactivat, utilitzeu la restauració</string>
     <string name="show_the_recycle_bin">Mostra la paperera de reciclatge</string>
     <string name="hide_the_recycle_bin">Oculta la paperera de reciclatge</string>
+    <string name="open_the_recycle_bin">Obre la paperera de reciclatge</string>
     <plurals name="moving_items_into_bin">
-        <item quantity="one">Movent %d element a la paperera de reciclatge</item>
-        <item quantity="other">Movent %d elements a la paperera de reciclatge</item>
+        <item quantity="one">S\'està movent %d element a la paperera de reciclatge</item>
+        <item quantity="other">S\'estan movent %d elements a la paperera de reciclatge</item>
     </plurals>
     <!-- Import / Export -->
     <string name="importing">S\'està important…</string>
@@ -674,6 +724,19 @@
     <string name="october">Octubre</string>
     <string name="november">Novembre</string>
     <string name="december">Desembre</string>
+    <!-- Short months -->
+    <string name="january_short">gen.</string>
+    <string name="february_short">febr.</string>
+    <string name="march_short">març</string>
+    <string name="april_short">abr.</string>
+    <string name="may_short">maig</string>
+    <string name="june_short">juny</string>
+    <string name="july_short">jul.</string>
+    <string name="august_short">ag.</string>
+    <string name="september_short">set.</string>
+    <string name="october_short">oct.</string>
+    <string name="november_short">nov.</string>
+    <string name="december_short">des.</string>
     <!-- in January -->
     <string name="in_january">de gener</string>
     <string name="in_february">de febrer</string>
@@ -715,12 +778,37 @@
     <string name="more_info">Més informació</string>
     <string name="upgrade">Actualitza</string>
     <string name="upgrade_calendar">Cal migrar els esdeveniments emmagatzemats localment de manera manual mitjançant l\'exportació en un fitxer .ics, i després importar-los. Podeu trobar els dos botons d\'exportació/importació al menú de la pantalla principal.</string>
+    <string name="upgraded_from_free">Hola
+\n
+\nsembla que acabeu d\'actualitzar a partir de la versió gratuïta. Un cop estigueu satisfet amb aquesta i potser hàgiu migrat les vostres dades, podeu desinstal·lar l\'antiga gratuïta per evitar llançar-la accidentalment, ja que ja no la necessitareu més.
+\n
+\nGràcies!</string>
     <string name="upgraded_to_pro">Hola,
 \n
-\nsembla que ja teniu també la versió Pro de l\'aplicació. Ja no tornareu a necessitar aquesta, podeu desinstal·lar-la.</string>
-    <string name="upgraded_to_pro_calendar">Cal migrar manualment els esdeveniments emmagatzemats localment mitjançant l\'exportació en un fitxer «.ics», i després la importació. Podeu trobar els botons d\'exportació i importació al menú superior.</string>
-    <string name="upgraded_to_pro_notes">Cal migrar manualment les vostres notes a la versió Pro.</string>
-    <string name="upgraded_to_pro_contacts">Cal migrar manualment els contactes emmagatzemats en privat mitjançant l\'exportació en un fitxer .vcf i després la importació. Podeu trobar els botons d\'exportació i importació al menú superior.</string>
+\nsembla que ja teniu també la versió Pro de l\'aplicació. Un cop estigueu satisfet amb ella i potser hàgiu migrat les dades, podeu desinstal·lar-la per evitar que l\'inicieu accidentalment, ja que ja no la necessitareu.
+\n
+\nGràcies!</string>
+    <string name="upgraded_to_pro_calendar">Hola,
+\n
+\nsembla que acabeu d\'actualitzar a partir de la versió gratuïta. Si voleu migrar els esdeveniments emmagatzemats localment, heu de fer-ho manualment exportant-los a un fitxer .ics en la versió gratuïta de l\'aplicació i important-los aquí a través del menú superior.
+\n
+\nQuan estigueu satisfet amb la vostra configuració de la versió Pro, podeu desinstal·lar l\'antiga gratuïta perquè ja no la necessitareu.
+\n
+\nGràcies!</string>
+    <string name="upgraded_to_pro_contacts">Hola,
+\n
+\nsembla que acabeu d\'actualitzar a partir de la versió gratuïta. Si teníeu contactes emmagatzemats a «%s», cal migrar-los manualment exportant-los en un fitxer .vcf des de la versió gratuïta de l\'aplicació i important-los aquí a través del menú superior.
+\n
+\nQuan estigueu satisfet amb la vostra configuració de la versió Pro, podeu desinstal·lar l\'antiga gratuïta perquè ja no la necessitareu.
+\n
+\nGràcies!</string>
+    <string name="upgraded_to_pro_notes">Hola,
+\n
+\nsembla que acabeu d\'actualitzar a partir de la versió gratuïta. Si voleu migrar les notes, cal fer-ho manualment exportant-les a un fitxer en la versió gratuïta de l\'aplicació i important-les aquí a través del menú superior.
+\n
+\nQuan estigueu satisfet amb la vostra configuració de la versió Pro, podeu desinstal·lar l\'antiga gratuïta perquè ja no la necessitareu.
+\n
+\nGràcies!</string>
     <!-- About -->
     <string name="about">Quant a</string>
     <string name="website">Lloc web</string>
@@ -749,7 +837,8 @@
     <string name="app_version">Versió de l\'aplicació: %s</string>
     <string name="device_os">SO del dispositiu: %s</string>
     <string name="donate_please">Hola,&lt;br&gt;&lt;br&gt; esperem que gaudiu de l\'aplicació. No conté cap anunci, així que si us plau, ajudeu el seu desenvolupament comprant l\'aplicació &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;, també evitarà que aquest diàleg es torni a mostrar.&lt;br&gt;&lt;br&gt; Gràcies!</string>
-    <string name="donate_new">Hola,&lt;br&gt;&lt;br&gt;espero que gaudiu de l\'aplicació. No conté anuncis i tampoc es recopilen les vostres dades. Si us plau, doneu suport al seu desenvolupament comprant &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank Tou&lt;/a&gt;. També tindreu totes les funcions de l\'aplicació i la personalització del color desbloquejades.&lt;br&gt;&lt;br&gt;Gràcies!</string>
+    <string name="donate_new">Hola,&lt;br&gt;&lt;br&gt;espero que gaudiu de l\'aplicació. No conté anuncis i tampoc es recopilen les vostres dades. Si us plau, doneu suport al seu desenvolupament comprant &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank Tou&lt;/a&gt;. També disposareu de totes les funcions de l\'aplicació incloent-hi la personalització del color desbloquejada.&lt;br&gt;&lt;br&gt;Gràcies!</string>
+    <string name="donate_short">Ajudeu-nos comprant la &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;, també desbloquejarà totes les funcions de l\'aplicació incloent-hi la personalització del color.</string>
     <string name="purchase">Compra</string>
     <string name="get_simple_phone">Encarregueu un Simple Phone</string>
     <string name="update_thank_you">Si us plau, actualitzeu Simple Thank You a la darrera versió</string>
@@ -787,6 +876,7 @@
     <string name="simple_flashlight">Simple Flashlight</string>
     <string name="simple_gallery">Simple Gallery</string>
     <string name="simple_keyboard">Simple Keyboard</string>
+    <string name="simple_launcher">Simple Launcher</string>
     <string name="simple_music_player">Simple Music Player</string>
     <string name="simple_notes">Simple Notes</string>
     <string name="simple_sms_messenger">Simple SMS Messenger</string>
@@ -804,6 +894,7 @@
     <string name="flashlight_short">Llanterna</string>
     <string name="gallery_short">Galeria</string>
     <string name="keyboard_short">Teclat</string>
+    <string name="launcher_short">Llançador</string>
     <string name="music_player_short">Reproductor de música</string>
     <string name="notes_short">Notes</string>
     <string name="sms_messenger_short">Missatges SMS</string>
@@ -830,7 +921,7 @@
     <string name="faq_8_title_commons">Per què he d\'actualitzar a la versió Pro?</string>
     <string name="faq_8_text_commons">Com que la versió de l\'aplicació ja no s\'actualitza, els errors que potser heu vist no es corregiran. Tampoc s\'afegiran funcions noves. Podeu comprar la versió Pro a Google Play per una petita quantitat de diners. Es tracta d\'un pagament únic, cosa que significa que un cop que l\'adquiriu, no caldrà tornar a pagar mai més. Ni tan sols després de canviar de dispositiu. Si no us agrada la versió Pro, podeu desinstal·lar-la en poques hores i automàticament es retornaran els diners. Si voleu un reemborsament més endavant, poseu-vos en contacte amb nosaltres a l\'adreça hello@simplemobiletools.com i ho aconseguireu.</string>
     <string name="faq_9_title_commons">Com puc seleccionar diversos elements alhora?</string>
-    <string name="faq_9_text_commons">Hi ha diverses maneres de fer-ho. La primera és iniciar el mode de selecció prement (llarg) un element i, a continuació, fer clic breu sobre els altres per seleccionar-los. La segona forma és similar a la selecció d\'elements en els ordinadors amb un ratolí, només cal que inicieu el mode de selecció prement un element i, tot seguit, arrossegueu-lo amb el dit cap a altres elements per seleccionar-los. La tercera manera de seleccionar diversos elements consisteix a prémer (llarg) un element, després prémer (llarg) un altre i se selecciona tot el que hi ha entre els dos. Si voleu seleccionar tots els elements; només cal que premeu (llarg) un element i, a continuació, feu clic al comptador d\'elements seleccionats a l\'extrem superior esquerre. Això seleccionarà o anul·larà la selecció de tot.</string>
+    <string name="faq_9_text_commons">Hi ha diverses maneres de fer-ho. La primera és iniciar el mode de selecció prement prolongadament un element i, a continuació, fer clic breu sobre els altres per seleccionar-los. La segona forma és similar a la selecció d\'elements en els ordinadors amb un ratolí, només cal que inicieu el mode de selecció prement prolongadament un element i, tot seguit, arrossegueu-lo amb el dit cap a altres elements per seleccionar-los. La tercera manera de seleccionar diversos elements consisteix a prémer prolongadament un element, després prémer prolongadament un altre i se seleccionarà tot el que hi ha entre els dos. Si voleu seleccionar tots els elements; només cal que premeu prolongadament un element i, a continuació, feu clic al comptador d\'elements seleccionats a l\'extrem superior esquerre. Això seleccionarà o anul·larà la selecció de tot.</string>
     <string name="faq_10_title_commons">He comprat l\'aplicació, però no la puc baixar en cap altre dispositiu.</string>
     <string name="faq_10_text_commons">Proveu de netejar la memòria cau de l\'aplicació Google Play i reinicieu el dispositiu. Es tracta d\'un problema de Google Play, que no està realment relacionat amb l\'aplicació en si.</string>
     <!-- Contributors -->
@@ -895,6 +986,7 @@
     <string name="why_upgrade_improved_design">Disseny millorat</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Editor de fotos avançat</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Editor avançat de fotos i vídeos</string>
     <string name="why_upgrade_heic_support">Implementació de fitxers HEIC/HEIF</string>
     <string name="why_upgrade_batch_renaming">Canvi de nom de fitxers per lots avançat</string>
     <string name="why_upgrade_folder_locking">Bloqueig de carpetes individuals</string>
@@ -956,9 +1048,28 @@
     <string name="audio_record_view_title">Audio Record View (visualització d\'àudio)</string>
     <string name="sms_mms_title">SMS MMS (gestió d\'SMS i MMS)</string>
     <string name="apng_title">APNG Android (implementa WebP animades)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (visualitzador de PDF)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (visualitzador de PDF)</string>
     <string name="m3u_parser_title">Analitzador M3U (gestió de fitxers «m3u» de llistes de reproducció)</string>
     <string name="android_lame_title">AndroidLame (codificador «mp3»)</string>
+    <!-- Trial -->
+    <string name="trial_expired">La prova ha caducat</string>
+    <string name="start_free_trial">Comença la prova gratuïta</string>
+    <string name="trial_expires_soon">Aquesta versió de prova caduca aviat.</string>
+    <string name="welcome_to_app_name">Us donem la benvinguda a %s!</string>
+    <string name="trial_start_description">Gràcies per utilitzar la nostra aplicació. Podeu utilitzar aquesta versió desbloquejada durant <font color="#FFFFFF">%d dies</font>. Un cop finalitzi la prova, considereu l\'actualització a la versió Pro. Té una gran quantitat de funcions noves, un disseny modern, sense anuncis i moltes altres millores.
+\n
+\nNomés l\'heu de pagar una vegada a la vida i si no esteu satisfet, podeu desinstal·lar-la i obtenir un reemborsament.
+\n
+\nEspero que us agradi :)</string>
+    <string name="trial_end_description">Si us plau, actualitzeu a la versió Pro per gaudir de l\'aplicació al màxim.
+\n
+\nNomés l\'heu de pagar una vegada a la vida i si no esteu satisfet, podeu desinstal·lar-la i obtenir un reemborsament.
+\n
+\nEns veiem allà :)</string>
+    <plurals name="trial_expires_days">
+        <item quantity="one">Aquesta versió de prova caduca d\'aquí a %d dia.</item>
+        <item quantity="other">Aquesta versió de prova caduca d\'aquí a %d dies.</item>
+    </plurals>
     <!-- Google Play listing -->
     <string name="deprecated_app">OBSOLETA: Aquesta versió de l\'aplicació ja no es manté, obteniu la versió Pro a https://play.google.com/store/apps/details\?id=com.simplemobiletools.xxx.pro</string>
     <string name="pro_app_refund">No oblideu que si desinstal·leu qualsevol aplicació de pagament en un termini de 2 hores, el càrrec es retornarà automàticament. Si voleu un reemborsament més tard, poseu-vos en contacte amb nosaltres a hello@simplemobiletools.com i el rebreu. Això fa que sigui fàcil provar-ho :)</string>

@@ -2,6 +2,7 @@
 <resources>
     <string name="ok">OK</string>
     <string name="cancel">Ακύρωση</string>
+    <string name="back">Πίσω</string>
     <string name="nothing">Τίποτα</string>
     <string name="later">Αργότερα</string>
     <string name="save_as">Αποθήκευση ως</string>
@@ -47,6 +48,7 @@
     <string name="no_phone_call_permission">Η εφαρμογή δεν έχει άδεια πραγματοποίησης τηλεφωνικών κλήσεων, παρακαλούμε παραχωρήσετε την στις ρυθμίσεις της συσκευής.</string>
     <string name="insert_text_here">Εισαγωγή κειμένου εδώ</string>
     <string name="call_person">Κλήση %s</string>
+    <string name="confirm_calling_person">Επιβεβαίωση κλήσης %s</string>
     <string name="zero">Μηδέν</string>
     <string name="one">Ένα</string>
     <string name="two">Δύο</string>
@@ -65,6 +67,11 @@
     <string name="disclaimer">Αποποίηση ευθύνης</string>
     <string name="take_photo">Λήψη φωτογραφίας</string>
     <string name="choose_photo">Επιλογή φωτογραφίας</string>
+    <string name="choose_video">Επιλογή βίντεο</string>
+    <string name="choose_contact">Επιλογή επαφής</string>
+    <string name="choose_file">Επιλογή αρχείου</string>
+    <string name="record_audio">Εγγραφή ήχου</string>
+    <string name="record_video">Εγγραφή βίντεο</string>
     <!-- Events -->
     <string name="birthday">Γενέθλια</string>
     <string name="anniversary">Επέτειος</string>
@@ -91,6 +98,10 @@
     <string name="landscape_column_count">Αρίθμηση στηλών τοπίου</string>
     <string name="change_cover_image">Αλλαγή εξώφυλλου φακέλου</string>
     <string name="select_photo">Επιλογή φωτογραφίας</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d στήλη</item>
+        <item quantity="other">%d στήλες</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Διαχείριση αποκλεισμένων αριθμών</string>
     <string name="not_blocking_anyone">Χωρίς αποκλεισμο κανενός.</string>
@@ -105,7 +116,8 @@
     <string name="block_confirmation">Σίγουρα να αποκλειστεί ο \"%s\"?</string>
     <string name="block_unknown_calls">Αποκλεισμός κλήσεων από μη αποθηκευμένες επαφές</string>
     <string name="block_unknown_messages">Αποκλεισμός μηνυμάτων από μη αποθηκευμένες επαφές</string>
-    <string name="add_blocked_number_helper_text">Enter a number or a pattern (e.g. *12345*, +1*8888) to block all calls and messages from numbers matching the pattern.</string>
+    <string name="add_blocked_number_helper_text">Εισάγετε έναν αριθμό ή ένα μοτίβο (π.χ. *12345*, +1*8888) για να μπλοκάρετε όλες τις κλήσεις και τα μηνύματα από αριθμούς που αντιστοιχούν στο μοτίβο.</string>
+    <string name="must_make_default_caller_id_app">Αδύνατη η φραγή αγνώστων αριθμών χωρίς άδεια ID κλήσεων.</string>
     <!-- Favorites -->
     <string name="favorites">Αγαπημένα</string>
     <string name="add_favorites">Προσθήκη αγαπημένων</string>
@@ -113,7 +125,25 @@
     <string name="remove_from_favorites">Αφαίρεση απο τα αγαπημένα</string>
     <!-- Search -->
     <string name="search">Αναζήτηση</string>
+    <string name="search_in_placeholder">Αναζήτηση σε %s</string>
     <string name="type_2_characters">Πληκτρολογήστε τουλάχιστον 2 χαρακτήρες για να ξεκινήσετε την αναζήτηση.</string>
+    <string name="search_contacts">Αναζήτηση επαφών</string>
+    <string name="search_favorites">Αναζήτηση αγαπημένων</string>
+    <string name="search_apps">Αναζήτηση εφαρμογών</string>
+    <string name="search_events">Αναζήτηση συμβάντων</string>
+    <string name="search_groups">Αναζήτηση ομάδων</string>
+    <string name="search_history">Αναζήτηση ιστορικού</string>
+    <string name="search_calls">Αναζήτηση κλήσεων</string>
+    <string name="search_files">Αναζήτηση αρχείων</string>
+    <string name="search_folders">Αναζήτηση φακέλων</string>
+    <string name="search_files_and_folders">Αναζήτηση αρχείων και φακέλων</string>
+    <string name="search_playlists">Αναζήτηση λίστες αναπαραγωγής</string>
+    <string name="search_artists">Αναζήτηση καλλιτεχνών</string>
+    <string name="search_albums">Αναζήτηση άλμπουμ</string>
+    <string name="search_tracks">Αναζήτηση τραγουδιών</string>
+    <string name="search_text">Αναζήτηση κειμένου</string>
+    <string name="search_conversations">Αναζήτηση συνομιλιών</string>
+    <string name="search_recordings">Αναζήτηση ηχογραφήσεων</string>
     <!-- Filters -->
     <string name="filter">Φίλτρο</string>
     <string name="filter_pro">Φίλτρο (Pro)</string>
@@ -125,6 +155,7 @@
     <string name="no_camera_permissions">Απαιτείται άδεια Κάμερας</string>
     <string name="no_audio_permissions">Απαιτείται άδεια Ήχου</string>
     <string name="no_post_notifications_permissions">Απαιτείται άδεια για την ανάρτηση ειδοποιήσεων</string>
+    <string name="no_permission">Χωρίς άδεια</string>
     <!-- Renaming -->
     <string name="rename_file">Μετονομασία αρχείου</string>
     <string name="rename_folder">Μετονομασία φακέλου</string>
@@ -287,6 +318,7 @@
     <string name="discard">Απόρριψη</string>
     <string name="undo_changes">Αναίρεση αλλαγών</string>
     <string name="undo_changes_confirmation">Είστε βέβαιοι ότι θέλετε να αναιρέσετε τις αλλαγές σας?</string>
+    <string name="cannot_be_undone">Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</string>
     <string name="save_before_closing">Έχετε αλλαγές που δεν έχουν αποθηκευτεί. Αποθήκευση πριν από την έξοδο?</string>
     <string name="apply_to_all_apps">Εφαρμογή χρωμάτων σε όλες τις Απλές Εφαρμογές</string>
     <string name="app_icon_color_warning">ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Ορισμένοι Εκκινητές δεν χειρίζονται σωστά τα εικονίδια της εφαρμογής. Σε περίπτωση που το εικονίδιο εξαφανιστεί, δοκιμάστε να ξεκινήσετε την εφαρμογή μέσω του Google Play ή κάποιου Witget, αν είναι διαθέσιμο.
@@ -317,8 +349,9 @@
     <string name="delete">Διαγραφή</string>
     <string name="remove">Αφαίρεση</string>
     <string name="rename">Μετονομασία</string>
-    <string name="share">Κοινόχρηστο</string>
-    <string name="share_via">Κοινόχρηστο μέσω</string>
+    <string name="share">Κοινοποίηση</string>
+    <string name="share_via">Κοινοποίηση μέσω</string>
+    <string name="resize">Αλλαγή μεγέθους</string>
     <string name="select_all">Επιλογή όλων</string>
     <string name="select_text">Επιλογή κειμένου</string>
     <string name="hide">Απόκρυψη</string>
@@ -327,12 +360,13 @@
     <string name="unhide_folder">Επανεμφάνιση φακέλου</string>
     <string name="temporarily_show_hidden">Προσωρινή εμφάνιση κρυφών</string>
     <string name="stop_showing_hidden">Απόκρυψη κρυφών πολυμέσων</string>
-    <string name="maximum_share_reached">Δεν μπορείτε να μοιραστείτε μεγάλο περιεχόμενο ταυτόχρονα</string>
+    <string name="maximum_share_reached">Δεν μπορείτε να κοινοποιήσετε τόσο μεγάλο περιεχόμενο ταυτόχρονα</string>
     <string name="empty_and_disable_recycle_bin">Άδειασμα και απενεργοποίηση του Κάδου Ανακύκλωσης</string>
     <string name="undo">Αναίρεση</string>
     <string name="redo">Επανάληψη</string>
     <string name="print">Εκτύπωση</string>
     <string name="print_pro">Εκτύπωση (Pro)</string>
+    <string name="shortcut">Συντόμευση</string>
     <string name="create_shortcut">Δημιουργία συντόμευσης</string>
     <string name="create_shortcut_pro">Δημιουργία συντόμευσης (Pro)</string>
     <string name="add_number_to_contact">Προσθήκη αριθμού στις επαφές</string>
@@ -349,6 +383,7 @@
     <string name="call">Κλήση</string>
     <string name="contact_details">Στοιχεία επαφής</string>
     <string name="add_contact">Προσθήκη επαφής</string>
+    <string name="wallpapers">Ταπετσαρίες</string>
     <!-- Sorting -->
     <string name="sort_by">Ταξινόμηση κατά</string>
     <string name="name">Όνομα</string>
@@ -374,13 +409,14 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">Είστε βέβαιοι ότι θέλετε να συνεχίσετε τη διαγραφή?</string>
     <string name="deletion_confirmation">Είστε βέβαιοι ότι θέλετε να διαγράψετε %s?</string>
+    <string name="deletion_confirmation_short">Διαγραφή %s;</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">Είστε βέβαιοι ότι θέλετε να μετακινήσετε %s στον κάδο ανακύκλωσης?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
     <string name="are_you_sure_delete">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το στοιχείο?</string>
     <string name="are_you_sure_recycle_bin">Είστε βέβαιοι ότι θέλετε να μετακινήσετε αυτό το στοιχείο στον κάδο ανακύκλωσης?</string>
     <string name="do_not_ask_again">Μην ξαναερωτηθώ αυτήν την περίοδο</string>
-    <string name="do_not_show_again">Να μην εμφανιστεί ξανά</string>
+    <string name="do_not_show_again">Χωρίς επανεμφάνιση</string>
     <string name="yes">Ναί</string>
     <string name="no">Όχι</string>
     <string name="maybe">Ίσως</string>
@@ -427,6 +463,7 @@
     <string name="seconds_letter">δ</string>
     <string name="minutes_letter">λ</string>
     <string name="hours_letter">ω</string>
+    <string name="week_number_short">εβδ.</string>
     <plurals name="seconds">
         <item quantity="one">%d δευτ.</item>
         <item quantity="other">%d δευτ.</item>
@@ -566,11 +603,13 @@
     <string name="purchase_simple_thank_you">Αγοράστε το \"Απλά Σας ευχαριστώ\"</string>
     <string name="general_settings">Γενικά</string>
     <string name="color_customization">Προσαρμογή χρώματος</string>
+    <string name="improved_color_customization">Βελτιωμένη προσαρμογή χρώματος</string>
     <string name="customize_colors">Προσαρμογή χρωμάτων</string>
     <string name="customize_colors_locked">Προσαρμογή χρωμάτων (Κλειδωμένο)</string>
     <string name="feature_locked">Κλειδωμένο</string>
     <string name="customize_widget_colors">Προσαρμογή χρωμάτων widget</string>
     <string name="customize_notifications">Προσαρμογή ειδοποιήσεων</string>
+    <string name="notification_sound">Ήχος ειδοποίησης</string>
     <string name="use_english_language">Χρήση γλώσσας English</string>
     <string name="language">Γλώσσα</string>
     <string name="show_hidden_items">Εμφάνιση κρυφών στοιχείων</string>
@@ -619,6 +658,16 @@
     <string name="main_screen">Αρχική οθόνη</string>
     <string name="thumbnails">Μικρογραφίες</string>
     <string name="list_view">Προβολή Λίστας</string>
+    <!-- Excluding -->
+    <string name="exclude">Εξαίρεση</string>
+    <string name="exclude_folder">Εξαίρεση φακέλου</string>
+    <string name="excluded_folders">Εξαίρεση φακέλων</string>
+    <string name="excluded">(εξαιρούνται)</string>
+    <string name="manage_excluded_folders">Διαχείριση εξαιρεμένων φακέλων</string>
+    <string name="remove_all">Διαγραφή όλων</string>
+    <string name="remove_all_description">Να αφαιρεθούν όλοι οι φάκελοι από την λίστα των εξαιρεμένων; Αυτό δεν θα διαγράψει τους φακέλους.</string>
+    <string name="temporarily_show_excluded">Προσωρινή εμφάνιση αποκλεισμένων</string>
+    <string name="stop_showing_excluded">Παύση εμφάνισης αποκλεισμένων</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Διαχείριση εμφανιζόμενων καρτελών</string>
     <string name="default_tab_to_open">Άνοιγμα καρτέλας κατά την έναρξη της εφαρμογής</string>
@@ -640,6 +689,7 @@
     <string name="moving_recycle_bin_items_disabled">Η μετακίνηση στον Κάδο είναι ανενεργή, χρησιμοποιείστε την Επαναφορά</string>
     <string name="show_the_recycle_bin">Εμφάνιση Κάδου Ανακύκλωσης</string>
     <string name="hide_the_recycle_bin">Απόκρυψη Κάδου Ανακύκλωσης</string>
+    <string name="open_the_recycle_bin">Άνοιγμα Κάδου Ανακύκλωσης</string>
     <plurals name="moving_items_into_bin">
         <item quantity="one">Μετακινήθηκε %d στοιχείο στον Κάδο</item>
         <item quantity="other">Μετακινήθηκαν %d στοιχεία στον Κάδο</item>
@@ -674,6 +724,19 @@
     <string name="october">Οκτώβριος</string>
     <string name="november">Νοέμβριος</string>
     <string name="december">Δεκέμβριος</string>
+    <!-- Short months -->
+    <string name="january_short">Ιαν</string>
+    <string name="february_short">Φεβ</string>
+    <string name="march_short">Μαρ</string>
+    <string name="april_short">Απρ</string>
+    <string name="may_short">Μάι</string>
+    <string name="june_short">Ιουν</string>
+    <string name="july_short">Ιουλ</string>
+    <string name="august_short">Αυγ</string>
+    <string name="september_short">Σεπ</string>
+    <string name="october_short">Οκτ</string>
+    <string name="november_short">Νοε</string>
+    <string name="december_short">Δεκ</string>
     <!-- in January -->
     <string name="in_january">τον Ιανουάριο</string>
     <string name="in_february">τον Φεβρουάριο</string>
@@ -715,10 +778,11 @@
     <string name="more_info">Περισσότερα</string>
     <string name="upgrade">Αναβάθμιση</string>
     <string name="upgrade_calendar">Πρέπει να μεταφέρετε τα αποθηκευμένα τοπικά συμβάντα χειροκίνητα, μέσω Εξαγωγής σε αρχείο .ics και στη συνέχεια Εισαγωγή. Μπορείτε να βρείτε τις επιλογές Εξαγωγής/Εισαγωγής, στο μενού της κύριας οθόνης.</string>
-    <string name="upgraded_to_pro">Γειά σας,\n\nφαίνεται ότι έχετε ήδη την έκδοση της εφαρμογής Pro. Δεν θα την χρειάζεστε πλέον, μπορείτε να την απεγκαταστήσετε.</string>
-    <string name="upgraded_to_pro_calendar">Πρέπει να μεταφέρετε τα τοπικά αποθηκευμένα Συμβάντα χειροκίνητα μέσω Εξαγωγή σε αρχείο .ics και στη συνέχεια Εισαγωγή. Μπορείτε να βρείτε τα κουμπιά Εξαγωγής και Εισαγωγής στο μενού επάνω.</string>
-    <string name="upgraded_to_pro_notes">Πρέπει να μεταφέρετε τις Σημειώσεις σας στην έκδοση Pro χειροκίνητα..</string>
-    <string name="upgraded_to_pro_contacts">Πρέπει να μεταφέρετε τις ιδιωτικά αποθηκευμένες επαφές χειροκίνητα μέσω Εξαγωγής σε αρχείο .vcf και στη συνέχεια Εισαγωγή. Μπορείτε να βρείτε τα κουμπιά Εξαγωγής και Εισαγωγής στο μενού επάνω.</string>
+    <string name="upgraded_from_free">Γεια σας,\n\nφαίνεται ότι μόλις αναβαθμίσατε από την δωρεάν έκδοση. Μόλις μείνετε ευχαριστημένοι με αυτή και ίσως μεταφέρετε τα δεδομένα σας, μπορείτε να απεγκαταστήσετε την παλιά δωρεάν έκδοση για να αποφύγετε τυχαία εκκίνησή της, καθώς δεν θα την χρειάζεστε πλέον.\n\nΕυχαριστώ!</string>
+    <string name="upgraded_to_pro">Γεια σας,\n\nφαίνεται ότι έχετε ήδη την έκδοση της εφαρμογής Pro επίσης. Μόλις μείνετε ευχαριστημένοι με αυτήν και ίσως μεταφέρατε τα δεδομένα σας, μπορείτε να την απεγκαταστήσετε για να αποφύγετε την τυχαία εκκίνησή της, καθώς δεν θα την χρειάζεστε πια.\n\nΕυχαριστούμε!</string>
+    <string name="upgraded_to_pro_calendar">Γεια σας,\n\nφαίνεται ότι μόλις αναβαθμίσατε από την δωρεάν έκδοση. Αν θέλετε να μεταφέρετε τα τοπικά αποθηκευμένα συμβάντα σας, θα πρέπει να το κάνετε χειροκίνητα, εξάγοντάς τα σε αρχείο .ics στην έκδοση της δωρεάν εφαρμογής και εισάγοντας τα εδώ μέσω του μενού επάνω. \n\nΜόλις μείνετε ικανοποιημένοι με την εγκατάστασή σας στην έκδοση Pro, μπορείτε να απεγκαταστήσετε την παλιά δωρεάν έκδοση, καθώς δεν την χρειάζεστε πλέον.\n\nΕυχαριστούμε!</string>
+    <string name="upgraded_to_pro_contacts">Γεια σας,\n\nφαίνεται ότι μόλις αναβαθμίσατε από την δωρεάν έκδοση. Αν είχατε αποθηκεύσει επαφές στο \"%s\", θα πρέπει να τις μεταφέρετε χειροκίνητα, εξάγοντας σε αρχείο .vcf από την έκδοση της δωρεάν εφαρμογής και εισάγοντας εδώ μέσω του επάνω μενού.\n\nΜόλις είστε ικανοποιημένοι με τη ρύθμιση στην έκδοση Pro, μπορείτε να απεγκαταστήσετε την παλιά δωρεάν έκδοση, καθώς δεν τη χρειάζεστε πλέον.\n\n Ευχαριστούμε!</string>
+    <string name="upgraded_to_pro_notes">Γεια σας,\n\nφαίνεται ότι μόλις αναβαθμίσατε από την δωρεάν έκδοση. Αν θέλετε να μεταφέρετε τις σημειώσεις σας, θα πρέπει να το κάνετε χειροκίνητα εξάγοντας τις σε ένα αρχείο στην έκδοση της δωρεάν εφαρμογής και εισάγοντας τις εδώ μέσω του επάνω μενού. \n\nΜόλις μείνετε ικανοποιημένοι με την εγκατάστασή σας στην έκδοση Pro, μπορείτε να απεγκαταστήσετε την παλιά δωρεάν έκδοση, καθώς δεν θα την χρειάζεστε πλέον.\n\nΕυχαριστούμε!</string>
     <!-- About -->
     <string name="about">Σχετικά</string>
     <string name="website">Ιστοσελίδα</string>
@@ -754,6 +818,7 @@
         ]]>
     </string>
     <string name="donate_new">Γειά σας,&lt;br&gt;&lt;br&gt;ελπίζω να απολαμβάνετε την εφαρμογή. Δεν περιέχει διαφημίσεις και δεν συλλέγουμε τα δεδομένα σας, παρακαλούμε υποστηρίξτε την ανάπτυξή της με την αγορά της &lt;a href=https://play.google.com/store/apps/details?id=com.simplemobiletools.thankyou&gt;Απλά Σας Ευχαριστούμε&lt;/a&gt;. Επίσης, θα έχετε ξεκλειδώσει όλες τις λειτουργίες της και την προσαρμογή των χρωμάτων.&lt;br&gt;&lt;br&gt;Σας ευχαριστώ!</string>
+    <string name="donate_short">Υποστηρίξτε μας αγοράζοντας την &lt;a href=https://play.google.com/store/apps/details?id=com.simplemobiletools.thankyou&gt;Απλά Σας Ευχαριστούμε&lt;/a&gt; παρακαλώ, θα ξεκλειδώσει επίσης όλες τις λειτουργίες της εφαρμογής και την προσαρμογή χρωμάτων.</string>
     <string name="purchase">Αγορά</string>
     <string name="get_simple_phone">Αγορά Simple Phone</string>
     <string name="update_thank_you">Παρακαλώ ενημερώστε την Απλά Σας Ευχαριστούμε στην τελευταία έκδοση</string>
@@ -792,6 +857,7 @@
     <string name="simple_flashlight">Απλός Φακός</string>
     <string name="simple_gallery">Απλή Συλλογή</string>
     <string name="simple_keyboard">Απλό Πληκτρολόγιο</string>
+    <string name="simple_launcher">Απλός Εκκινητής</string>
     <string name="simple_music_player">Απλός Music Player</string>
     <string name="simple_notes">Απλές Σημειώσεις</string>
     <string name="simple_sms_messenger">Απλός SMS Messenger</string>
@@ -809,6 +875,7 @@
     <string name="flashlight_short">Φακός</string>
     <string name="gallery_short">Συλλογή</string>
     <string name="keyboard_short">Πληκτρολόγιο</string>
+    <string name="launcher_short">Εκκινητής</string>
     <string name="music_player_short">Μουσική</string>
     <string name="notes_short">Σημειώσεις</string>
     <string name="sms_messenger_short">Μηνύματα SMS</string>
@@ -921,6 +988,7 @@
     <string name="why_upgrade_improved_design">Βελτιωμένος σχεδιασμός</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Προηγμένος επεξεργαστής φωτογραφιών</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Προηγμένος επεξεργαστής Φώτο &amp; Βίντεο</string>
     <string name="why_upgrade_heic_support">HEIC/HEIF υποστήριξη αρχείων</string>
     <string name="why_upgrade_batch_renaming">Προηγμένη μετονομασία αρχείων δέσμης</string>
     <string name="why_upgrade_folder_locking">Κλείδωμα μεμονωμένων φακέλων</string>
@@ -982,9 +1050,21 @@
     <string name="audio_record_view_title">Audio Record View (audio visualization)</string>
     <string name="sms_mms_title">SMS MMS (SMS and MMS handling)</string>
     <string name="apng_title">APNG Android (animated WebP support)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (PDF viewer)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (PDF viewer)</string>
     <string name="m3u_parser_title">M3U Parser (m3u playlist file handling)</string>
     <string name="android_lame_title">AndroidLame (mp3 encoder)</string>
+    <!-- Trial -->
+    <string name="trial_expired">Η Δοκιμή έληξε</string>
+    <string name="start_free_trial">Ξεκινήστε δωρεάν δοκιμή</string>
+    <string name="trial_expires_soon">Η Δοκιμή σας λήγει σύντομα.</string>
+    <string name="welcome_to_app_name">Καλώς ήρθατε σε %s!</string>
+    <string name="trial_start_description">Σας ευχαριστούμε που χρησιμοποιείτε την εφαρμογή μας. Μπορείτε να χρησιμοποιήσετε αυτή την ξεκλείδωτη έκδοση για &lt;font color=\'#FFFFFF\'>%d ημέρες&lt;/font>. Μετά το τέλος της δοκιμής, παρακαλούμε εξετάστε το ενδεχόμενο αναβάθμισης στην έκδοση Pro. Διαθέτει μεγάλο αριθμό νέων χαρακτηριστικών, μοντέρνο σχεδιασμό, χωρίς διαφημίσεις και πολλές άλλες βελτιώσεις.
+        \n\nΑπλά πρέπει να πληρώσετε για αυτό μια φορά στη ζωή σας και αν δεν είστε ικανοποιημένοι, μπορείτε να την απεγκαταστήσετε και να λάβετε επιστροφή χρημάτων.\n\nΕλπίζω να σας αρέσει. :)</string>
+    <string name="trial_end_description">Παρακαλούμε αναβαθμίστε στην έκδοση Pro για να απολαύσετε την εφαρμογή στο έπακρο.\n\nΠρέπει να πληρώσετε μόνο μια φορά στη ζωή σας και αν δεν είστε ικανοποιημένοι, μπορείτε να την απεγκαταστήσετε και να λάβετε επιστροφή χρημάτων.\n\nΤα λέμε εκεί. :)</string>
+    <plurals name="trial_expires_days">
+        <item quantity="one">Η δοκιμή σας λήγει σε %d ημέρα.</item>
+        <item quantity="other">Η δοκιμή σας λήγει σε %d ημέρες.</item>
+    </plurals>
     <!-- Google Play listing -->
     <string name="deprecated_app">ΚΑΤΑΡΓΗΣΗ: Αυτή η έκδοση της εφαρμογής δεν υποστηρίζεται πλέον, λάβετε την έκδοση Pro εδώ https://play.google.com/store/apps/details?id=com.simplemobiletools.xxx.pro</string>
     <string name="pro_app_refund">Μην ξεχνάτε οτι αν απεγκατασταθεί εντός 2 ωρών, θα επιστραφούν αυτόματα τα χρήματα σας. Αν θέλετε επιστροφή χρημάτων οποιαδήποτε στιγμή αργότερα, απλά επικοινωνήστε μαζί μας στο hello@simplemobiletools.com και θα τα λάβετε. Αυτό το κάνει εύκολότερο για να την δοκιμάσετε :)</string>

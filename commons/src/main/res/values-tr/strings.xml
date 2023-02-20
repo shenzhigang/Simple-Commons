@@ -2,6 +2,7 @@
 <resources>
     <string name="ok">Tamam</string>
     <string name="cancel">İptal</string>
+    <string name="back">Geri</string>
     <string name="nothing">Hiçbir şey</string>
     <string name="later">Sonra</string>
     <string name="save_as">Farklı kaydet</string>
@@ -9,7 +10,7 @@
     <string name="invalid_file_format">Geçersiz dosya biçimi</string>
     <string name="out_of_memory_error">Yetersiz hafıza hatası</string>
     <string name="an_error_occurred">Bir hata oluştu: %s</string>
-    <string name="error">Error: %s</string>
+    <string name="error">Hata: %s</string>
     <string name="open_with">Birlikte aç</string>
     <string name="edit_with">Şununla düzenle</string>
     <string name="edit">Düzenle</string>
@@ -47,6 +48,7 @@
     <string name="no_phone_call_permission">Uygulamanın telefon görüşmesi başlatma izni yok, lütfen aygıt ayarlarında izin verin</string>
     <string name="insert_text_here">Metni buraya girin</string>
     <string name="call_person">%s kişisini ara</string>
+    <string name="confirm_calling_person">%s kişisini aramayı onayla</string>
     <string name="zero">Sıfır</string>
     <string name="one">Bir</string>
     <string name="two">İki</string>
@@ -65,6 +67,11 @@
     <string name="disclaimer">Sorumluluk Reddi</string>
     <string name="take_photo">Fotoğraf çek</string>
     <string name="choose_photo">Fotoğraf seç</string>
+    <string name="choose_video">Video seç</string>
+    <string name="choose_contact">Kişi seç</string>
+    <string name="choose_file">Dosya seç</string>
+    <string name="record_audio">Ses kaydet</string>
+    <string name="record_video">Video kaydet</string>
     <!-- Events -->
     <string name="birthday">Doğum günü</string>
     <string name="anniversary">Yıldönümü</string>
@@ -91,6 +98,10 @@
     <string name="landscape_column_count">Yatay sütun sayısı</string>
     <string name="change_cover_image">Kapak resmini değiştir</string>
     <string name="select_photo">Fotoğraf seç</string>
+    <plurals name="column_counts">
+        <item quantity="one">%d sütun</item>
+        <item quantity="other">%d sütun</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">Engellenen numaraları yönet</string>
     <string name="not_blocking_anyone">Kimseyi engellemiyorsun.</string>
@@ -105,7 +116,8 @@
     <string name="block_confirmation">\"%s\" gerçekten engellensin mi?</string>
     <string name="block_unknown_calls">Kayıtlı olmayan kişilerden gelen aramaları engelle</string>
     <string name="block_unknown_messages">Kayıtlı olmayan kişilerden gelen mesajları engelle</string>
-    <string name="add_blocked_number_helper_text">Enter a number or a pattern (e.g. *12345*, +1*8888) to block all calls and messages from numbers matching the pattern.</string>
+    <string name="add_blocked_number_helper_text">Eşleşen numaralardan gelen tüm aramaları ve mesajları engellemek için bir numara veya desen (örn. *12345*, +1*8888) girin.</string>
+    <string name="must_make_default_caller_id_app">Arayan kimliği izni olmadan bilinmeyen numaralar engellenemiyor.</string>
     <!-- Favorites -->
     <string name="favorites">Favoriler</string>
     <string name="add_favorites">Favori ekle</string>
@@ -113,7 +125,25 @@
     <string name="remove_from_favorites">Favorilerden kaldır</string>
     <!-- Search -->
     <string name="search">Ara</string>
+    <string name="search_in_placeholder">%s içinde ara</string>
     <string name="type_2_characters">Aramaya başlamak için en az 2 karakter yazın.</string>
+    <string name="search_contacts">Kişileri ara</string>
+    <string name="search_favorites">Favorileri ara</string>
+    <string name="search_apps">Uygulama ara</string>
+    <string name="search_events">Etkinlikleri ara</string>
+    <string name="search_groups">Grupları ara</string>
+    <string name="search_history">Geçmişte ara</string>
+    <string name="search_calls">Aramalarda ara</string>
+    <string name="search_files">Dosyaları ara</string>
+    <string name="search_folders">Klasörleri ara</string>
+    <string name="search_files_and_folders">Dosya ve klasörleri ara</string>
+    <string name="search_playlists">Çalma listelerinde ara</string>
+    <string name="search_artists">Sanatçıları ara</string>
+    <string name="search_albums">Albümleri ara</string>
+    <string name="search_tracks">Parçaları ara</string>
+    <string name="search_text">Metin ara</string>
+    <string name="search_conversations">Görüşmeleri ara</string>
+    <string name="search_recordings">Kayıt ara</string>
     <!-- Filters -->
     <string name="filter">Filtre</string>
     <string name="filter_pro">Filtre (Pro)</string>
@@ -125,6 +155,7 @@
     <string name="no_camera_permissions">Kamera izni gerekiyor</string>
     <string name="no_audio_permissions">Ses izni gerekiyor</string>
     <string name="no_post_notifications_permissions">Bildirim göndermek için izin gereklidir</string>
+    <string name="no_permission">İzin yok</string>
     <!-- Renaming -->
     <string name="rename_file">Dosyayı yeniden adlandır</string>
     <string name="rename_folder">Klasörü yeniden adlandır</string>
@@ -286,6 +317,7 @@
     <string name="discard">Çık</string>
     <string name="undo_changes">Değişiklikleri geri al</string>
     <string name="undo_changes_confirmation">Değişikliklerinizi geri almak istediğinizden emin misiniz?</string>
+    <string name="cannot_be_undone">Bu eylem geri alınamaz.</string>
     <string name="save_before_closing">Kaydedilmemiş değişiklikleriniz var. Çıkmadan önce kaydedilsin mi?</string>
     <string name="apply_to_all_apps">Tüm Basit Uygulamalara renk uygula</string>
     <string name="app_icon_color_warning">UYARI: Bazı başlatıcılar uygulama simgesi özelleştirmesini düzgün kullanamıyor. Simgenin kaybolması durumunda, uygulamayı Google Play\'den veya varsa bir widget kullanarak başlatmayı deneyin. Başlatıldıktan sonra, sadece öntanımlı turuncu simgeyi #F57C00 geri ayarlayın. En kötü durumda uygulamayı yeniden kurmanız gerekebilir.</string>
@@ -307,7 +339,7 @@
     <string name="black_white">Siyah &amp; Beyaz</string>
     <string name="custom">Özel</string>
     <string name="shared">Paylaşılan</string>
-    <string name="system_default">System default</string>
+    <string name="system_default">Sistem öntanımlı değeri</string>
     <!-- What's new -->
     <string name="whats_new">Yenilikler</string>
     <string name="whats_new_disclaimer">* yalnızca büyük güncellemeler burada listelenmiştir; daima bazı küçük geliştirmeler de vardır</string>
@@ -317,6 +349,7 @@
     <string name="rename">Yeniden adlandır</string>
     <string name="share">Paylaş</string>
     <string name="share_via">Şununla paylaş</string>
+    <string name="resize">Yeniden boyutlandır</string>
     <string name="select_all">Tümünü seç</string>
     <string name="select_text">Metin seç</string>
     <string name="hide">Gizle</string>
@@ -331,6 +364,7 @@
     <string name="redo">Yinele</string>
     <string name="print">Yazdır</string>
     <string name="print_pro">Yazdır (Pro)</string>
+    <string name="shortcut">Kısayol</string>
     <string name="create_shortcut">Kısayol oluştur</string>
     <string name="create_shortcut_pro">Kısayol oluştur (Pro)</string>
     <string name="add_number_to_contact">Kişiye numara ekle</string>
@@ -345,8 +379,9 @@
     <string name="send_sms">SMS gönder</string>
     <string name="send_email">E-posta gönder</string>
     <string name="call">Ara</string>
-    <string name="contact_details">Contact details</string>
-    <string name="add_contact">Add contact</string>
+    <string name="contact_details">Kişi bilgileri</string>
+    <string name="add_contact">Kişi ekle</string>
+    <string name="wallpapers">Duvar kağıtları</string>
     <!-- Sorting -->
     <string name="sort_by">Sıralama ölçütü</string>
     <string name="name">Ad</string>
@@ -372,6 +407,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">Silme işlemine devam etmek istediğinizden emin misiniz?</string>
     <string name="deletion_confirmation">%s gerçekten silinsin mi?</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">%s gerçekten Geri Dönüşüm Kutusuna taşınsın mı?</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -425,6 +461,7 @@
     <string name="seconds_letter">sn</string>
     <string name="minutes_letter">dk</string>
     <string name="hours_letter">sa</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="one">%d saniye</item>
         <item quantity="other">%d saniye</item>
@@ -564,11 +601,13 @@
     <string name="purchase_simple_thank_you">Basit Teşekkürler\'i Satın Al</string>
     <string name="general_settings">Genel</string>
     <string name="color_customization">Renk özelleştirme</string>
+    <string name="improved_color_customization">İyileştirilmiş renk özelleştirmesi</string>
     <string name="customize_colors">Renkleri özelleştir</string>
     <string name="customize_colors_locked">Renkleri özelleştir (Kilitli)</string>
     <string name="feature_locked">Kilitli</string>
     <string name="customize_widget_colors">Widget renklerini özelleştir</string>
     <string name="customize_notifications">Bildirimleri özelleştir</string>
+    <string name="notification_sound">Notification sound</string>
     <string name="use_english_language">İngilizce dilini kullan</string>
     <string name="language">Dil</string>
     <string name="show_hidden_items">Gizli ögeleri göster</string>
@@ -617,6 +656,16 @@
     <string name="main_screen">Ana ekran</string>
     <string name="thumbnails">Küçük resimler</string>
     <string name="list_view">Liste görünümü</string>
+    <!-- Excluding -->
+    <string name="exclude">Hariç tut</string>
+    <string name="exclude_folder">Klasörü hariç tut</string>
+    <string name="excluded_folders">Hariç tutulan klasörler</string>
+    <string name="excluded">(hariç)</string>
+    <string name="manage_excluded_folders">Hariç tutulan klasörleri yönet</string>
+    <string name="remove_all">Tümünü kaldır</string>
+    <string name="remove_all_description">Tüm klasörler hariç tutulanlar listesinden kaldırılsın mı\? Bu klasörleri silmez.</string>
+    <string name="temporarily_show_excluded">Hariç tutulanları geçici olarak göster</string>
+    <string name="stop_showing_excluded">Hariç tutulanları göstermeyi durdur</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">Gösterilen sekmeleri yönet</string>
     <string name="default_tab_to_open">Uygulama başlatıldığında açılacak sekme</string>
@@ -638,6 +687,7 @@
     <string name="moving_recycle_bin_items_disabled">Geri Dönüşüm kutusu ögelerini taşıma devre dışı, lütfen Geri Yükle\'yi kullanın</string>
     <string name="show_the_recycle_bin">Geri Dönüşüm Kutusunu göster</string>
     <string name="hide_the_recycle_bin">Geri Dönüşüm Kutusunu gizle</string>
+    <string name="open_the_recycle_bin">Geri Dönüşüm Kutusunu aç</string>
     <plurals name="moving_items_into_bin">
         <item quantity="one">%d öge Geri Dönüşüm Kutusu\'na taşınıyor</item>
         <item quantity="other">%d öge Geri Dönüşüm Kutusu\'na taşınıyor</item>
@@ -672,6 +722,19 @@
     <string name="october">Ekim</string>
     <string name="november">Kasım</string>
     <string name="december">Aralık</string>
+    <!-- Short months -->
+    <string name="january_short">Oca</string>
+    <string name="february_short">Şub</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Nis</string>
+    <string name="may_short">May</string>
+    <string name="june_short">Haz</string>
+    <string name="july_short">Tem</string>
+    <string name="august_short">Ağu</string>
+    <string name="september_short">Eyl</string>
+    <string name="october_short">Eki</string>
+    <string name="november_short">Kas</string>
+    <string name="december_short">Ara</string>
     <!-- in January -->
     <string name="in_january">Ocak ayında</string>
     <string name="in_february">Şubat ayında</string>
@@ -713,12 +776,37 @@
     <string name="more_info">Daha fazla bilgi</string>
     <string name="upgrade">Yükselt</string>
     <string name="upgrade_calendar">Yerel olarak depolanan etkinlikleri bir .ics dosyasına dışa aktarıp ardından içe aktarma yoluyla el ile geçirmeniz gerekir. Her iki dışa aktarma/içe aktarma düğmelerini ana ekran menüsünde bulabilirsiniz.</string>
+    <string name="upgraded_from_free">Merhaba,
+\n
+\nÜcretsiz sürümden yeni yükseltmişsiniz gibi görünüyor. Bundan memnun olduğunuzda ve belki de verilerinizi aktardığınızda, artık ihtiyacınız olmayacağı için yanlışlıkla başlatılmasını önlemek için eski ücretsiz olanı kaldırabilirsiniz.
+\n
+\nTeşekkürler!</string>
     <string name="upgraded_to_pro">Merhaba,
 \n
-\nGörünüşe göre zaten Pro uygulama sürümünüz de var. Artık buna ihtiyacınız olmayacak, kaldırabilirsiniz.</string>
-    <string name="upgraded_to_pro_calendar">Yerel olarak kaydedilen etkinlikleri bir .ics dosyasına aktarıp ardından içe aktarma yoluyla elle taşımanız gerekmektedir. Dışa ve içe aktarma düğmelerini üst menüde bulabilirsiniz.</string>
-    <string name="upgraded_to_pro_notes">Notlarınızı Pro sürümüne elle taşımanız gerekmektedir.</string>
-    <string name="upgraded_to_pro_contacts">Özel olarak kaydedilen kişileri bir .vcf dosyasına aktarıp ardından içe aktarma yoluyla elle taşımanız gerekmektedir. Dışa ve içe aktarma düğmelerini üst menüde bulabilirsiniz.</string>
+\nGörünüşe göre zaten Pro uygulama sürümüne de sahipsiniz. Bundan memnun olduğunuzda ve belki de verilerinizi taşıdığınızda, artık ihtiyacınız olmayacağı için yanlışlıkla başlatmaktan kaçınmak için bunu kaldırabilirsiniz.
+\n
+\nTeşekkürler!</string>
+    <string name="upgraded_to_pro_calendar">Merhaba,
+\n
+\nGörünüşe göre ücretsiz sürümden yeni yükseltme yaptınız. Yerel olarak depolanan etkinliklerinizi taşımak istiyorsanız, ücretsiz uygulama sürümünde bunları bir .ics dosyasına aktararak ve üst menüden buraya aktararak bunu elle yapmanız gerekir.
+\n
+\nPro sürümdeki kurulumunuzdan memnun olduğunuzda, artık ihtiyacınız olmayacağı için eski ücretsiz sürümü kaldırabilirsiniz.
+\n
+\nTeşekkürler!</string>
+    <string name="upgraded_to_pro_contacts">Merhaba,
+\n
+\nGörünüşe göre ücretsiz sürümden yeni yükseltme yaptınız. \"%s\" altında kayıtlı kişileriniz varsa, ücretsiz uygulama sürümünde bunları bir .vcf dosyasına aktararak ve üst menüden buraya aktararak bunu elle yapmanız gerekir.
+\n
+\nPro sürümdeki kurulumunuzdan memnun olduğunuzda, artık ihtiyacınız olmayacağı için eski ücretsiz sürümü kaldırabilirsiniz.
+\n
+\nTeşekkürler!</string>
+    <string name="upgraded_to_pro_notes">Merhaba,
+\n
+\nGörünüşe göre ücretsiz sürümden yeni yükseltme yaptınız. Notlarınızı taşımak istiyorsanız, ücretsiz uygulama sürümünde bunları bir dosyaya aktararak ve üst menüden buraya aktararak bunu elle yapmanız gerekir.
+\n
+\nPro sürümdeki kurulumunuzdan memnun olduğunuzda, artık ihtiyacınız olmayacağı için eski ücretsiz sürümü kaldırabilirsiniz.
+\n
+\nTeşekkürler!</string>
     <!-- About -->
     <string name="about">Hakkında</string>
     <string name="website">Web sitesi</string>
@@ -753,7 +841,8 @@
             Teşekkürler!
         ]]>
     </string>
-    <string name="donate_new">Merhaba,&lt;br&gt;&lt;br&gt; umarım uygulamadan memnunsunuzdur. Hiçbir reklam içermiyor ve verilerinizi de toplamıyoruz, lütfen &lt;href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Basit Teşekkürler&lt;/a&gt; uygulamasını satın alarak geliştirmeyi destekleyin. Ayrıca tüm uygulama özelliklerine ve renk özelleştirme kilidine sahip olacaksınız.&lt;br&gt;&lt;br&gt; Teşekkürler!</string>
+    <string name="donate_new">Merhaba,&lt;br&gt;&lt;br&gt; umarım uygulamadan memnunsunuzdur. Hiçbir reklam içermiyor ve verilerinizi de toplamıyoruz, lütfen &lt;href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Basit Teşekkürler&lt;/a&gt; uygulamasını satın alarak geliştirmeyi destekleyin. Ayrıca renk özelleştirme dahil tüm uygulama özelliklerinin kilidi açılacaktır.&lt;br&gt;&lt;br&gt; Teşekkürler!</string>
+    <string name="donate_short">Lütfen &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Basit Teşekkürler&lt;/a&gt; uygulamasını satın alarak bizi destekleyin, ayrıca renk özelleştirme dahil tüm uygulama özelliklerinin kilidi açılacaktır.</string>
     <string name="purchase">Satın al</string>
     <string name="get_simple_phone">Basit Telefon Sipariş Edin</string>
     <string name="update_thank_you">Lütfen Basit Teşekkürler\'i son sürüme güncelleyin</string>
@@ -792,6 +881,7 @@
     <string name="simple_flashlight">Basit Fener</string>
     <string name="simple_gallery">Basit Galeri</string>
     <string name="simple_keyboard">Basit Klavye</string>
+    <string name="simple_launcher">Basit Başlatıcı</string>
     <string name="simple_music_player">Basit Müzik Çalar</string>
     <string name="simple_notes">Basit Notlar</string>
     <string name="simple_sms_messenger">Basit SMS Messenger</string>
@@ -809,6 +899,7 @@
     <string name="flashlight_short">Fener</string>
     <string name="gallery_short">Galeri</string>
     <string name="keyboard_short">Klavye</string>
+    <string name="launcher_short">Başlatıcı</string>
     <string name="music_player_short">Müzik Çalar</string>
     <string name="notes_short">Notlar</string>
     <string name="sms_messenger_short">SMS Messenger</string>
@@ -863,12 +954,12 @@
     <string name="translation_azerbaijani">Azerice</string>
     <string name="translation_bengali">Bengalce</string>
     <string name="translation_breton">Bretonca</string>
-    <string name="translation_bulgarian">Bulgarian</string>
+    <string name="translation_bulgarian">Bulgarca</string>
     <string name="translation_catalan">Katalanca</string>
     <string name="translation_czech">Çekce</string>
     <string name="translation_welsh">Galce</string>
     <string name="translation_danish">Danca</string>
-    <string name="translation_english">English</string>
+    <string name="translation_english">İngilizce</string>
     <string name="translation_german">Almanca</string>
     <string name="translation_greek">Yunanca</string>
     <string name="translation_spanish">İspanyolca</string>
@@ -915,6 +1006,7 @@
     <string name="why_upgrade_improved_design">Geliştirilmiş tasarım</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">Gelişmiş fotoğraf düzenleyici</string>
+    <string name="why_upgrade_advanced_photo_video_editor">Gelişmiş fotoğraf ve video düzenleyici</string>
     <string name="why_upgrade_heic_support">HEIC/HEIF dosya desteği</string>
     <string name="why_upgrade_batch_renaming">Gelişmiş toplu dosya adlandırma</string>
     <string name="why_upgrade_folder_locking">Kişisel klasör kilidi</string>
@@ -976,9 +1068,28 @@
     <string name="audio_record_view_title">Audio Record View (ses görselleştirme)</string>
     <string name="sms_mms_title">SMS MMS (SMS ve MMS yönetimi)</string>
     <string name="apng_title">APNG Android (hareketli WebP desteği)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (PDF görüntüleyici)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (PDF görüntüleyici)</string>
     <string name="m3u_parser_title">M3U Ayrıştırıcı (m3u çalma listesi dosyası işleme)</string>
     <string name="android_lame_title">AndroidLame (mp3 kodlayıcı)</string>
+    <!-- Trial -->
+    <string name="trial_expired">Deneme süresi sona erdi</string>
+    <string name="start_free_trial">Deneme sürümünü başlat</string>
+    <string name="trial_expires_soon">Deneme süreniz yakında sona eriyor.</string>
+    <string name="welcome_to_app_name">%s uygulamasına hoş geldiniz!</string>
+    <string name="trial_start_description">Uygulamamızı kullandığınız için teşekkür ederiz. Bu kilitsiz sürümü <font color="#FFFFFF">%d gün</font> kullanabilirsiniz. Deneme sürümü sona erdiğinde, lütfen Pro sürümüne yükseltmeyi düşünün. Çok sayıda yeni özelliğe, modern tasarıma, reklamsız kullanıma ve diğer birçok iyileştirmeye sahiptir.
+\n
+\nBunun için yalnızca bir kez ödeme yapmanız yeterlidir, memnun kalmazsanız kaldırabilir ve geri ödeme alabilirsiniz.
+\n
+\nUmarım beğenirsiniz :)</string>
+    <string name="trial_end_description">Uygulamanın keyfini sonuna kadar çıkarmak için lütfen Pro sürümüne yükseltin.
+\n
+\nYalnızca bir kez ödeme yapmanız yeterlidir, memnun kalmazsanız kaldırabilir ve geri ödeme alabilirsiniz.
+\n
+\nOrada görüşürüz :)</string>
+    <plurals name="trial_expires_days">
+        <item quantity="one">Deneme süreniz %d gün içinde sona erecektir.</item>
+        <item quantity="other">Deneme süreniz %d gün içinde sona erecek.</item>
+    </plurals>
     <!-- Google Play listing -->
     <string name="deprecated_app">Kullanımdan kaldırıldı: Uygulamanın bu sürümü artık sağlanmıyor, Pro sürümünü şuradan indirin: https://play.google.com/store/apps/details?id=com.simplemobiletools.xxx.pro</string>
     <string name="pro_app_refund">Ücretli herhangi bir uygulamayı 2 saat içinde kaldırırsanız, otomatik olarak iade edileceğini unutmayın. İstediğiniz zaman geri ödeme almak isterseniz, hello@simplemobiletools.com adresinden bizimle iletişime geçmeniz yeterli olacaktır. Bu denemeyi kolaylaştırır :)</string>

@@ -2,6 +2,7 @@
 <resources>
     <string name="ok">确认</string>
     <string name="cancel">取消</string>
+    <string name="back">返回</string>
     <string name="nothing">没有东西</string>
     <string name="later">稍后</string>
     <string name="save_as">保存</string>
@@ -47,6 +48,7 @@
     <string name="no_phone_call_permission">应用没有发起呼叫的权限，请在设备设置中授予该权限</string>
     <string name="insert_text_here">在此输入文本</string>
     <string name="call_person">打电话给 %s</string>
+    <string name="confirm_calling_person">确认呼叫 %s</string>
     <string name="zero">零</string>
     <string name="one">一</string>
     <string name="two">二</string>
@@ -65,6 +67,11 @@
     <string name="disclaimer">免责声明</string>
     <string name="take_photo">拍照</string>
     <string name="choose_photo">选择照片</string>
+    <string name="choose_video">选择视频</string>
+    <string name="choose_contact">选择联系人</string>
+    <string name="choose_file">选择文件</string>
+    <string name="record_audio">录音</string>
+    <string name="record_video">录像</string>
     <!-- Events -->
     <string name="birthday">生日</string>
     <string name="anniversary">纪念日</string>
@@ -91,6 +98,9 @@
     <string name="landscape_column_count">水平列数</string>
     <string name="change_cover_image">更换封面图片</string>
     <string name="select_photo">选择图片</string>
+    <plurals name="column_counts">
+        <item quantity="other">%d 列</item>
+    </plurals>
     <!-- Blocked numbers -->
     <string name="manage_blocked_numbers">管理黑名单</string>
     <string name="not_blocking_anyone">你没有拦截任何人。</string>
@@ -105,7 +115,8 @@
     <string name="block_confirmation">您确定要将 \"%s\" 添加到黑名单吗？</string>
     <string name="block_unknown_calls">拦截来自未存储联系人的通话</string>
     <string name="block_unknown_messages">拦截来自未存储联系人的消息</string>
-    <string name="add_blocked_number_helper_text">Enter a number or a pattern (e.g. *12345*, +1*8888) to block all calls and messages from numbers matching the pattern.</string>
+    <string name="add_blocked_number_helper_text">输入号码或模式（例如 *12345*、+1*8888）以阻止来自匹配模式的号码的所有来电和消息。</string>
+    <string name="must_make_default_caller_id_app">要拦截未知号码，你必须将应用设为默认的来电显示和骚扰电话屏蔽应用。</string>
     <!-- Favorites -->
     <string name="favorites">收藏</string>
     <string name="add_favorites">添加收藏</string>
@@ -113,7 +124,25 @@
     <string name="remove_from_favorites">从收藏中移除</string>
     <!-- Search -->
     <string name="search">搜索</string>
+    <string name="search_in_placeholder">在 %s 中搜索</string>
     <string name="type_2_characters">请输入至少两个字符来开始搜索。</string>
+    <string name="search_contacts">搜索联系人</string>
+    <string name="search_favorites">搜索收藏</string>
+    <string name="search_apps">搜索应用</string>
+    <string name="search_events">搜索事件</string>
+    <string name="search_groups">搜索组</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_calls">搜索通话</string>
+    <string name="search_files">搜索文件</string>
+    <string name="search_folders">搜索文件夹</string>
+    <string name="search_files_and_folders">搜索文件和文件夹</string>
+    <string name="search_playlists">搜索播放列表</string>
+    <string name="search_artists">搜索艺术家</string>
+    <string name="search_albums">搜索专辑</string>
+    <string name="search_tracks">搜索曲目</string>
+    <string name="search_text">搜索文本</string>
+    <string name="search_conversations">搜索对话</string>
+    <string name="search_recordings">搜索录音</string>
     <!-- Filters -->
     <string name="filter">过滤</string>
     <string name="filter_pro">过滤 (Pro)</string>
@@ -125,6 +154,7 @@
     <string name="no_camera_permissions">请授予相机权限</string>
     <string name="no_audio_permissions">请授予音频权限</string>
     <string name="no_post_notifications_permissions">需要发送通知权限</string>
+    <string name="no_permission">无权限</string>
     <!-- Renaming -->
     <string name="rename_file">重命名文件</string>
     <string name="rename_folder">重命名文件夹</string>
@@ -136,7 +166,7 @@
     <string name="rename_folder_ok">文件夹重命名成功</string>
     <string name="renaming_folder">重命名文件夹</string>
     <string name="filename_cannot_be_empty">文件名不能为空</string>
-    <string name="filename_invalid_characters">文件名包含非法字符</string>
+    <string name="filename_invalid_characters">文件名包含无效字符</string>
     <string name="filename_invalid_characters_placeholder">文件名 \'%s\' 包含无效的字符</string>
     <string name="extension_cannot_be_empty">扩展名不能为空</string>
     <string name="source_file_doesnt_exist">原文件 %s 不存在</string>
@@ -186,7 +216,7 @@
     <string name="file">文件</string>
     <string name="create_new_folder">新建文件夹</string>
     <string name="name_taken">同名文件夹或文件已存在</string>
-    <string name="invalid_name">名称包含非法字符</string>
+    <string name="invalid_name">名称包含无效字符</string>
     <string name="empty_name">请输入名称</string>
     <string name="unknown_error_occurred">未知错误</string>
     <!-- File operation conflicts -->
@@ -284,6 +314,7 @@
     <string name="discard">丢弃</string>
     <string name="undo_changes">撤销更改</string>
     <string name="undo_changes_confirmation">是否撤销您的更改？</string>
+    <string name="cannot_be_undone">此操作无法撤销。</string>
     <string name="save_before_closing">您尚未保存更改，是否保存？</string>
     <string name="apply_to_all_apps">应用到所有简约系列应用</string>
     <string name="app_icon_color_warning">警告：某些桌面应用无法正确处理自定义应用图标。如果图标消失，请尝试通过 Google Play 或某个小部件启动应用（如果有的话）。
@@ -312,6 +343,7 @@
     <string name="rename">重命名</string>
     <string name="share">分享</string>
     <string name="share_via">分享到</string>
+    <string name="resize">调整尺寸</string>
     <string name="select_all">全选</string>
     <string name="select_text">选择文本</string>
     <string name="hide">隐藏</string>
@@ -326,6 +358,7 @@
     <string name="redo">重做</string>
     <string name="print">打印</string>
     <string name="print_pro">打印 (Pro)</string>
+    <string name="shortcut">快捷方式</string>
     <string name="create_shortcut">创建快捷方式</string>
     <string name="create_shortcut_pro">创建快捷方式 (Pro)</string>
     <string name="add_number_to_contact">添加号码至联系人</string>
@@ -342,6 +375,7 @@
     <string name="call">呼叫</string>
     <string name="contact_details">联系人详情</string>
     <string name="add_contact">添加联系人</string>
+    <string name="wallpapers">壁纸</string>
     <!-- Sorting -->
     <string name="sort_by">排序方式</string>
     <string name="name">名称</string>
@@ -367,6 +401,7 @@
     <!-- Confirmation dialog -->
     <string name="proceed_with_deletion">是否执行此删除操作？</string>
     <string name="deletion_confirmation">您确定要删除 %s？</string>
+    <string name="deletion_confirmation_short">Delete %s?</string>
     <!-- Are you sure you want to delete 5 items? -->
     <string name="move_to_recycle_bin_confirmation">您确定要移动 %s到回收站？</string>
     <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
@@ -419,6 +454,7 @@
     <string name="seconds_letter">s</string>
     <string name="minutes_letter">m</string>
     <string name="hours_letter">h</string>
+    <string name="week_number_short">wk.</string>
     <plurals name="seconds">
         <item quantity="other">%d 秒</item>
     </plurals>
@@ -530,11 +566,13 @@
     <string name="purchase_simple_thank_you">感谢购买</string>
     <string name="general_settings">通用</string>
     <string name="color_customization">颜色定制</string>
+    <string name="improved_color_customization">改进的色彩自定义</string>
     <string name="customize_colors">自定义颜色</string>
     <string name="customize_colors_locked">自定义颜色 (锁定)</string>
     <string name="feature_locked">已锁定</string>
     <string name="customize_widget_colors">自定义小部件颜色</string>
     <string name="customize_notifications">自定义通知</string>
+    <string name="notification_sound">Notification sound</string>
     <string name="use_english_language">强制使用英语语言</string>
     <string name="language">语言</string>
     <string name="show_hidden_items">显示隐藏的项目</string>
@@ -583,6 +621,16 @@
     <string name="main_screen">主屏幕</string>
     <string name="thumbnails">缩略图</string>
     <string name="list_view">列表视图</string>
+    <!-- Excluding -->
+    <string name="exclude">排除</string>
+    <string name="exclude_folder">排除文件夹</string>
+    <string name="excluded_folders">排除的文件夹</string>
+    <string name="excluded">(已排除)</string>
+    <string name="manage_excluded_folders">管理排除的文件夹</string>
+    <string name="remove_all">全部移除</string>
+    <string name="remove_all_description">是否移除排除列表中的所有项目？此操作不会删除文件夹本身。</string>
+    <string name="temporarily_show_excluded">临时显示已排除的</string>
+    <string name="stop_showing_excluded">停止显示已排除的</string>
     <!-- Default tab to open -->
     <string name="manage_shown_tabs">管理显示的页面</string>
     <string name="default_tab_to_open">应用启动时打开的页面</string>
@@ -604,6 +652,7 @@
     <string name="moving_recycle_bin_items_disabled">移动回收站项目被禁用，请使用恢复功能</string>
     <string name="show_the_recycle_bin">显示回收站</string>
     <string name="hide_the_recycle_bin">隐藏回收站</string>
+    <string name="open_the_recycle_bin">打开回收站</string>
     <plurals name="moving_items_into_bin">
         <item quantity="other">正在移动 %d 个项目到回收站</item>
     </plurals>
@@ -637,6 +686,19 @@
     <string name="october">十月</string>
     <string name="november">十一月</string>
     <string name="december">十二月</string>
+    <!-- Short months -->
+    <string name="january_short">Jan</string>
+    <string name="february_short">Feb</string>
+    <string name="march_short">Mar</string>
+    <string name="april_short">Apr</string>
+    <string name="may_short">May</string>
+    <string name="june_short">June</string>
+    <string name="july_short">July</string>
+    <string name="august_short">Aug</string>
+    <string name="september_short">九月</string>
+    <string name="october_short">Oct</string>
+    <string name="november_short">Nov</string>
+    <string name="december_short">Dec</string>
     <!-- in January -->
     <string name="in_january">一月</string>
     <string name="in_february">二月</string>
@@ -678,12 +740,37 @@
     <string name="more_info">更多信息</string>
     <string name="upgrade">升级</string>
     <string name="upgrade_calendar">您必须通过导出/导入.ics文件来自行转移本地存储的事件。您可以在主界面菜单中找到导出/导入选项。</string>
+    <string name="upgraded_from_free">嘿，
+\n
+\n你似乎刚从免费版升级过来。 如果你对收费版用得满意并且已经迁移了数据，你可以卸载旧的免费版避免意外启动，因为你不再需要它了。
+\n
+\n谢谢！</string>
     <string name="upgraded_to_pro">嘿，
 \n
-\n你似乎已经有了专业版的应用程序。你不再需要这个，你可以卸载它。</string>
-    <string name="upgraded_to_pro_calendar">你必须通过在 .ics 文件中导出，然后导入的方式手动迁移本地存储的事件。你可以在顶部菜单中找到导出和导入按钮。</string>
-    <string name="upgraded_to_pro_notes">你必须手动将笔记迁移到专业版。</string>
-    <string name="upgraded_to_pro_contacts">你必须通过在 .vcf 文件中导出，然后导入的方式手动迁移私有存储的联系人。你可以在顶部菜单中找到导出和导入按钮。</string>
+\n除了免费版，你似乎也已经安装了专业版。如果你觉得满意并且迁移了数据，你可以卸载免费版避免意外启动，因你不再需要它。
+\n
+\n谢谢！</string>
+    <string name="upgraded_to_pro_calendar">嘿，
+\n
+\n你似乎从免费版升级到了专业版。如果你想把免费版中本地存储的事件迁移过来，你必须手动在免费版中把它们导出为 .ics 文件，并通过顶部菜单导入到专业版中。
+\n
+\n如果你对专业版设置感到满意，你就可以卸载旧的免费版，因你不再需要它。
+\n
+\n谢谢！</string>
+    <string name="upgraded_to_pro_contacts">嘿，
+\n
+\n你似乎刚从免费版升级到了专业版。如果你有任何存储在 \"%s\" 下的联系人，你必须手动在免费版中把它们导出为 .vcf 文件，并通过顶部菜单导入到专业版中。
+\n
+\n如果你对专业版设置感到满意，你就可以卸载旧的免费版，因你不再需要它。
+\n
+\n谢谢！</string>
+    <string name="upgraded_to_pro_notes">嘿，
+\n
+\n你似乎刚从免费版升级到了专业版。如果你想迁移笔记数据，你必须手动在免费版中把它们导出为文件，并通过顶部菜单导入到专业版中。
+\n
+\n如果你对专业版设置感到满意，你就可以卸载旧的免费版，因你不再需要它。
+\n
+\n谢谢！</string>
     <!-- About -->
     <string name="about">关于</string>
     <string name="website">网站</string>
@@ -719,7 +806,8 @@
             非常感谢！
         ]]>
     </string>
-    <string name="donate_new">你好，&lt;br&gt;&lt;br&gt;希望您喜欢这个应用程序。它不包含广告，我们也不收集您的数据，要支持它的开发， 请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;. 您将解锁所有的应用功能和颜色自定义。&lt;br&gt;&lt;br&gt;谢谢你！</string>
+    <string name="donate_new">你好，&lt;br&gt;&lt;br&gt;希望您喜欢这个应用程序。它不包含广告，我们也不收集您的数据，要支持它的开发， 请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt;. 您将解锁所有的应用功能，包括颜色自定义。&lt;br&gt;&lt;br&gt;谢谢你！</string>
+    <string name="donate_short">请购买 &lt;a href=https://play.google.com/store/apps/details\?id=com.simplemobiletools.thankyou&gt;Simple Thank You&lt;/a&gt; 支持我们，购买后还可解锁所有应用功能，包括允许定制颜色。</string>
     <string name="purchase">购买</string>
     <string name="get_simple_phone">订购 Simple Phone</string>
     <string name="update_thank_you">请更新简单感谢到最新版本</string>
@@ -749,6 +837,7 @@
     <string name="simple_flashlight">简单手电筒</string>
     <string name="simple_gallery">简单图库</string>
     <string name="simple_keyboard">简单键盘</string>
+    <string name="simple_launcher">简单启动器</string>
     <string name="simple_music_player">简单音乐播放器</string>
     <string name="simple_notes">简单笔记</string>
     <string name="simple_sms_messenger">简单短信</string>
@@ -766,6 +855,7 @@
     <string name="flashlight_short">手电筒</string>
     <string name="gallery_short">图库</string>
     <string name="keyboard_short">键盘</string>
+    <string name="launcher_short">启动器</string>
     <string name="music_player_short">音乐播放器</string>
     <string name="notes_short">笔记</string>
     <string name="sms_messenger_short">短信</string>
@@ -866,6 +956,7 @@
     <string name="why_upgrade_improved_design">改进的设计</string>
     <!-- Gallery Pro -->
     <string name="why_upgrade_advanced_photo_editor">高级照片编辑器</string>
+    <string name="why_upgrade_advanced_photo_video_editor">高级照片和视频编辑器</string>
     <string name="why_upgrade_heic_support">支持 HEIC/HEIF 文件</string>
     <string name="why_upgrade_batch_renaming">高级批量文件重命名</string>
     <string name="why_upgrade_folder_locking">单独文件夹锁定</string>
@@ -897,7 +988,7 @@
     <string name="why_upgrade_zooming">缩放</string>
     <!-- License -->
     <string name="notice">此应用使用了以下三方库。致谢。</string>
-    <string name="third_party_licences">开放源代码</string>
+    <string name="third_party_licences">第三方许可证</string>
     <string name="kotlin_title">Kotlin (编程语言)</string>
     <string name="subsampling_title">子采样比例图像视图 (可缩放的图像视图)</string>
     <string name="glide_title">Glide（图片加载和缓存）</string>
@@ -927,9 +1018,28 @@
     <string name="audio_record_view_title">Audio Record View (音频可视化)</string>
     <string name="sms_mms_title">SMS MMS (短信和彩信处理)</string>
     <string name="apng_title">APNG Android (动画 WebP 支持)</string>
-    <string name="pdf_viewer_title">Android PdfViewer (PDF 查看器)</string>
+    <string name="pdf_view_pager_title">PDFViewPager (PDF 查看器)</string>
     <string name="m3u_parser_title">M3U 解析器 (m3u 播放列表文件处理)</string>
     <string name="android_lame_title">AndroidLame (mp3 编码器)</string>
+    <!-- Trial -->
+    <string name="trial_expired">试用期已过</string>
+    <string name="start_free_trial">开始免费试用</string>
+    <string name="trial_expires_soon">你的试用期即将结束。</string>
+    <string name="welcome_to_app_name">欢迎来到 %s!</string>
+    <string name="trial_start_description">谢谢你使用我们的应用。你可以使用此解锁版 <font color="#FFFFFF">%d 天</font>。试用结束后请考虑升级到专业版。专业版有大量新功能，现代设计，无广告及许多其他改进。
+\n
+\n你只需付款一次，如不满意你可以卸载它并获得退款。
+\n
+\n希望你会喜欢它 :)</string>
+    <string name="trial_end_description">请升级到专业版以最大程度享受本应用
+\n
+\n你只需付款一次，如不满意你可以卸载它并获得退款。
+\n
+\n希望你会喜欢它 :)</string>
+    <plurals name="trial_expires_days">
+        <item quantity="one">Your trial expires in %d day.</item>
+        <item quantity="other">Your trial expires in %d days.</item>
+    </plurals>
     <!-- Google Play listing -->
     <string name="deprecated_app">已弃用：该应用版本已不再维护，请在以下链接获取专业版 https://play.google.com/store/apps/details?id=com.simplemobiletools.xxx.pro</string>
     <string name="pro_app_refund">别忘了如果您在2小时内卸载任何付费应用将会自动退款。如果您想在之后退款，只需通过 hello@simplemobiletools.com 联系我们即可。这样您就可以放心试用了 :)</string>
